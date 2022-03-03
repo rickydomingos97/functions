@@ -11,5 +11,5 @@ let number1 = 20
 let number2 = 11
 sum(number1, number2)
 console.log(`o numero 1 é ${number1}`)
-console.log(`O numero 2 é ${number2}`);
+console.log(`O numero 2 é ${number2}`)
 console.log(`a soma é ${number1, number2}`)
