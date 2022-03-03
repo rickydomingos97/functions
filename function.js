@@ -1,18 +1,15 @@
-// app de frases motivacionais
+// Também é possível declarar funções dentro de variáveis, desta maneira: const variavel = function() {}. Uma parte importante de funções são os parâmetros, que são similares variáveis que funcionam para colocar dados em funções, eles são declarados junto à declaração da função e quando a função for executada, os valores dos argumentos são colocados dentro dos parênteses.
 
-// declaracao da funcao
-// function statement
-function createPhrases() {
-    console.log('Estudar é muito bom');
-    console.log('paciencia e persistencia');
-    console.log('revisao é a mae do aprendizado');
+// function anonymous or function expression
+
+// parametros da funcao
+const sum = function(number1, number2) {
+    console.log(number1 + number2);
 }
 
-function space() {
-    console.log('--------------')
-}
-
-// chamar a funcao, rodar a funcao, exectute, run, invoke
-createPhrases()
-space()
-createPhrases()
+let number1 = 20
+let number2 = 11
+sum(number1, number2)
+console.log(`o numero 1 é ${number1}`)
+console.log(`O numero 2 é ${number2}`);
+console.log(`a soma é ${number1, number2}`)
