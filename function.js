@@ -6,8 +6,9 @@
 
 /*
 const sum = function(number1, number2) {
-    console.log(number1 + number2);
+    console.log(number1 * number2);
 }
+<<<<<<< HEAD
 let number1 = 20
 let number2 = 11
 sum(number1, number2)
@@ -89,3 +90,4 @@ const texto = function(palavra1, palavra2) {
 let p1 = "oi "
 let p2 = "oioi"
 console.log(`${texto(p1, p2)}`)
+
