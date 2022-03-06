@@ -114,14 +114,15 @@ console.log(`resultado da divisao eh ${divide(nomer01, nomer02)}`)
 
 */
 
-const minus = function(numero1, numero2) {
-    let total = numero1 - numero2
+const vezes = (nomer1, nomer2)=>{
+    let total = nomer1 * nomer2
     return total
 }
 
-let n1 = 20
-let n2 = 12
-console.log(`primeiro numero: ${n1}`)
-console.log(`segundo numero: ${n2}`)
-console.log(`o total eh: ${minus(n1, n2)}`)
+let nomer1 = 8
+let nomer2 = 2
+console.log(`Operacao de multiplicacao`)
+console.log(`${nomer1} x ${nomer2} = ${vezes(nomer1, nomer2)}`)
+
+
 
