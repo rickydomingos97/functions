@@ -113,16 +113,28 @@ let nomer02 = 2
 console.log(`resultado da divisao eh ${divide(nomer01, nomer02)}`)
 
 */
+let nomer1 = 8
+let nomer2 = 2
 
 const vezes = (nomer1, nomer2)=>{
     let total = nomer1 * nomer2
     return total
 }
-
-let nomer1 = 8
-let nomer2 = 2
 console.log(`Operacao de multiplicacao`)
 console.log(`${nomer1} x ${nomer2} = ${vezes(nomer1, nomer2)}`)
 
 
 
+const soma = (nomer1, nomer2) => {
+    let total = nomer1 + nomer2
+    return total
+}
+console.log(`operacao de soma`)
+console.log(`${nomer1} + ${nomer2} = ${soma(nomer1, nomer2)}`)
+
+const minus = (nomer1, nomer2) => {
+    let total = nomer1 - nomer2
+    return total
+}
+console.log(`operacao de subtração`)
+console.log(`${nomer1} - ${nomer2} = ${minus(nomer1, nomer2)}`)
