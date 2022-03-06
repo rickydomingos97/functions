@@ -73,6 +73,7 @@ console.log(`o primeiro numero eh ${nomer01}`)
 console.log(`o segundo numero eh ${nomer02}`)
 console.log(`a soma dos dois numeros eh ${soma(nomer01, nomer02)}`)*/
 
+/*
 const minus = (numero1, numero2)=>{
     let total = numero1 - numero2
     return total
@@ -90,4 +91,37 @@ const texto = function(palavra1, palavra2) {
 let p1 = "oi "
 let p2 = "oioi"
 console.log(`${texto(p1, p2)}`)
+
+
+const multiply = (numero1, numero2)=>{
+    let total = numero1 * numero2
+    return total
+}
+
+let numero01 = 2
+let numero02 = 20
+console.log(`resultado ${multiply(numero01, numero02)}`)
+
+const divide = ()=>{
+    let totaldivisao = nomer01 / nomer02
+    return totaldivisao
+}
+
+let nomer01 = 40
+let nomer02 = 2
+
+console.log(`resultado da divisao eh ${divide(nomer01, nomer02)}`)
+
+*/
+
+const minus = function(numero1, numero2) {
+    let total = numero1 - numero2
+    return total
+}
+
+let n1 = 20
+let n2 = 12
+console.log(`primeiro numero: ${n1}`)
+console.log(`segundo numero: ${n2}`)
+console.log(`o total eh: ${minus(n1, n2)}`)
 
