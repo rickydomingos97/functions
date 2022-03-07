@@ -26,6 +26,14 @@ const notaFiscal = function(produto1, produto2) {
     let compra = produto1 + produto2
     return compra
 }
-let produto1 = 10.99
+let produto1 = 10.98
 let produto2 = 9.99
 console.log(`valor final da compra ${notaFiscal(produto1, produto2)}`)
+
+const Russia = function (cidade1, cidade2) {
+    let pais = cidade1 + cidade2
+    return pais
+}
+let cidade1 = 'moscow '
+let cidade2 = 'krasnodar'
+console.log(`as suas cidades sao: ${Russia(cidade1, cidade2)}`)
