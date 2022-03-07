@@ -1,39 +1,44 @@
-// funcao eh um liquidificador
+// function scope
 
-/*
-function fazerSuco(fruta1, fruta2) {
-    return 'suco de ' + fruta1 + fruta2
-}
-const copo = fazerSuco('banana', 'maça')
-console.log(copo)
+/* quando declaro uma variavel e nao declaro um valor ela eh undefined
+let subjects = 'create video'
 
-function fazerOmelete(ingrediente1, ingrediente2) {
-    return ingrediente1 + ingrediente2
+function createThink(subject) {
+    subject = 'study'
+    return subject
 }
-const panela = fazerOmelete('ovo', 'ovos')
-console.log(panela)
+console.log(subjects)
+console.log(createThink(subjects))
+
+ 
+
+let assunto = 'criar video'
+
+function createThink(assunto) {
+    assunto = 'estudar'
+    return assunto
+}
+
+console.log(assunto)
+console.log(createThink(assunto))
+
+
+
+let fruta = 'banana'
+
+function suco(fruta) {
+    fruta = 'manga'
+    return fruta
+}
+
+console.log(fruta);
+console.log(suco(fruta))
 */
 
-const fazerSuco = (fruta1, fruta2)=>{
-    let copo = fruta1 + fruta2
-    return copo
+let dinheiro = 'real'
+function carteira(dinheiro) {
+    dinheiro = 'dolar'
+    return dinheiro
 }
-let fruta1 = 'banana'
-let fruta2 = 'uva'
-console.log(`suco de ${fazerSuco(fruta1, fruta2)}`)
-
-const notaFiscal = function(produto1, produto2) {
-    let compra = produto1 + produto2
-    return compra
-}
-let produto1 = 10.98
-let produto2 = 9.99
-console.log(`valor final da compra ${notaFiscal(produto1, produto2)}`)
-
-const Russia = function (cidade1, cidade2) {
-    let pais = cidade1 + cidade2
-    return pais
-}
-let cidade1 = 'moscow '
-let cidade2 = 'krasnodar'
-console.log(`as suas cidades sao: ${Russia(cidade1, cidade2)}`)
+console.log(dinheiro)
+console.log(carteira(dinheiro))

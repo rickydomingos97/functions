@@ -138,3 +138,45 @@ const minus = (nomer1, nomer2) => {
 }
 console.log(`operacao de subtração`)
 console.log(`${nomer1} - ${nomer2} = ${minus(nomer1, nomer2)}`)
+
+/**============================================================== */
+
+// funcao eh um liquidificador
+
+/*
+function fazerSuco(fruta1, fruta2) {
+    return 'suco de ' + fruta1 + fruta2
+}
+const copo = fazerSuco('banana', 'maça')
+console.log(copo)
+
+function fazerOmelete(ingrediente1, ingrediente2) {
+    return ingrediente1 + ingrediente2
+}
+const panela = fazerOmelete('ovo', 'ovos')
+console.log(panela)
+*/
+
+const fazerSuco = (fruta1, fruta2)=>{
+    let copo = fruta1 + fruta2
+    return copo
+}
+let fruta1 = 'banana'
+let fruta2 = 'uva'
+console.log(`suco de ${fazerSuco(fruta1, fruta2)}`)
+
+const notaFiscal = function(produto1, produto2) {
+    let compra = produto1 + produto2
+    return compra
+}
+let produto1 = 10.98
+let produto2 = 9.99
+console.log(`valor final da compra ${notaFiscal(produto1, produto2)}`)
+
+const Russia = function (cidade1, cidade2) {
+    let pais = cidade1 + cidade2
+    return pais
+}
+let cidade1 = 'moscow '
+let cidade2 = 'krasnodar'
+console.log(`as suas cidades sao: ${Russia(cidade1, cidade2)}`)
