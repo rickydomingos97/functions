@@ -1,44 +1,11 @@
-// function scope
+/**
+ * O JavaScript possui function hoisting, permitindo que uma função seja declarada depois de ser utilizada, pois faz algo similar a elevar no código declarações de funções. Porém isso não acontece dentro de variáveis. 
+ */
 
-/* quando declaro uma variavel e nao declaro um valor ela eh undefined
-let subjects = 'create video'
+// primeiro eu executo a funcao e depois eu crio a funcao
 
-function createThink(subject) {
-    subject = 'study'
-    return subject
+sayMyName()
+
+function sayMyName() {
+    console.log('ricardo domingos')
 }
-console.log(subjects)
-console.log(createThink(subjects))
-
- 
-
-let assunto = 'criar video'
-
-function createThink(assunto) {
-    assunto = 'estudar'
-    return assunto
-}
-
-console.log(assunto)
-console.log(createThink(assunto))
-
-
-
-let fruta = 'banana'
-
-function suco(fruta) {
-    fruta = 'manga'
-    return fruta
-}
-
-console.log(fruta);
-console.log(suco(fruta))
-*/
-
-let dinheiro = 'real'
-function carteira(dinheiro) {
-    dinheiro = 'dolar'
-    return dinheiro
-}
-console.log(dinheiro)
-console.log(carteira(dinheiro))
