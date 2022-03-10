@@ -40,12 +40,16 @@ myName('ricardo')
 // Uma callback function é uma função que está sendo passada para outra função como parâmetro.
 
 function sayMyName(name) {
-    console.log(name)
+    console.log('antes da callback')
+
+    name()
+
+    console.log('depois de chamar a callback')
 }
 
 sayMyName(
     () => {
-        console.log('ricardo')
+        console.log('estou em uma callback')
     }
 )
 
