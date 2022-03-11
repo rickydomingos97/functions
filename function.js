@@ -41,10 +41,8 @@ myName('ricardo')
 
 function sayMyName(name) {
     console.log('antes da callback')
-
     name()
-
-    console.log('depois de chamar a callback')
+    console.log('depois do callback')
 }
 
 sayMyName(
@@ -53,3 +51,16 @@ sayMyName(
     }
 )
 
+console.log('=====================')
+
+function liquidificador(frutas) {
+    console.log('1 - agua')
+    frutas()
+    console.log('3 - tomar suco')
+}
+
+liquidificador(
+    ()=>{
+        console.log('2 - bater suco')
+    }
+)
