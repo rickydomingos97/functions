@@ -39,7 +39,7 @@ function Carro(nome) {
 const civic = new Carro("Civic")
 console.log(civic.liga())
 
-*/
+===================================
 function Carro(modelo) {
 	this.modelo = modelo
 	this.cor = function() {
@@ -64,3 +64,20 @@ const inter = new Card()
 const nubank = new Card()
 console.log(inter.master())
 console.log(nubank.visa())
+*/
+
+function Pessoa(nome) {
+	this.nome = nome
+	this.comer = ()=>{
+		return this.nome + " esta comendo manga"
+	}
+	this.dormir = ()=>{
+		return this.nome + " esta com muito sono"
+	}
+}
+
+const joao = new Pessoa("JOAO")
+const maria = new Pessoa("Maria")
+console.log(joao.comer())
+console.log(maria.comer())
+console.log(maria.dormir())
