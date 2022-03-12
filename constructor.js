@@ -49,3 +49,18 @@ function Carro(modelo) {
 const civic = new Carro("Civic")
 const onix = new Carro("Onix")
 console.log(civic.modelo + civic.cor())
+
+function Card(bandeira) {
+	this.bandeira = bandeira
+	this.visa = ()=>{
+		return " Este cartao eh Visa"
+	}
+	this.master = ()=>{
+		return " este cartao eh master"
+	}
+}
+
+const inter = new Card()
+const nubank = new Card()
+console.log(inter.master())
+console.log(nubank.visa())
