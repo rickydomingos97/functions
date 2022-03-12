@@ -40,15 +40,12 @@ const civic = new Carro("Civic")
 console.log(civic.liga())
 
 */
-
-function Conta(tipo) {
-	this.tipo = tipo
-	this.saldo = ()=>{
-		return this.tipo + " saldo 13.00"
+function Carro(modelo) {
+	this.modelo = modelo
+	this.cor = function() {
+		return " verde escuro"
 	}
 }
-
-const corrente = new Conta("Corrente")
-const poupanca = new Conta("Poupanca")
-
-console.log(corrente.saldo())
+const civic = new Carro("Civic")
+const onix = new Carro("Onix")
+console.log(civic.modelo + civic.cor())
