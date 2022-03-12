@@ -64,10 +64,10 @@ const inter = new Card()
 const nubank = new Card()
 console.log(inter.master())
 console.log(nubank.visa())
-*/
 
+=====================================
 function Pessoa(nome) {
-	this.nome = nome
+	this.nomePessoa = nome
 	this.comer = ()=>{
 		return this.nome + " esta comendo manga"
 	}
@@ -81,3 +81,37 @@ const maria = new Pessoa("Maria")
 console.log(joao.comer())
 console.log(maria.comer())
 console.log(maria.dormir())
+console.log(joao.nomePessoa)
+========================================
+function Aula(aula) {
+	this.aulas = aula
+	this.assistir = function () {
+		return this.aulas + ": aula ao vivo"
+	}
+	this.disponivel = ()=>{
+		return false + " aula nao disponivel"
+	}
+}
+
+const matematica = new Aula("Matematica")
+console.log(matematica.assistir())
+
+const russo = new Aula("Russo")
+console.log(russo.assistir())
+console.log(russo.disponivel())
+*/
+
+function Pessoa(nome) {
+	this.nomePessoa = nome
+	this.acordar = ()=>{
+		return this.nomePessoa + ": esta acordando"
+	}
+	this.dormir = ()=>{
+		return this.nomePessoa + " esta dormindo"
+	}
+}
+
+const maria = new Pessoa("MARIA")
+console.log(maria.acordar())
+const joao = new Pessoa("JOAO")
+console.log(joao.dormir())
