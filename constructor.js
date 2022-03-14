@@ -99,8 +99,7 @@ console.log(matematica.assistir())
 const russo = new Aula("Russo")
 console.log(russo.assistir())
 console.log(russo.disponivel())
-*/
-
+====================================
 function Pessoa(nome) {
 	this.nomePessoa = nome
 	this.acordar = ()=>{
@@ -115,3 +114,17 @@ const maria = new Pessoa("MARIA")
 console.log(maria.acordar())
 const joao = new Pessoa("JOAO")
 console.log(joao.dormir())
+*/
+
+function Russia(cidade) {
+	this.cidade = cidade
+	this.rua = ()=>{
+		return "Rua: petra metalnikova"
+	}
+}
+
+const cidade = new Russia("Krasnodar")
+const cidade2 = new Russia("Ural")
+
+console.log(cidade.cidade)
+console.log(cidade.rua())
