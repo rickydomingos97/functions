@@ -99,7 +99,7 @@ console.log(matematica.assistir())
 const russo = new Aula("Russo")
 console.log(russo.assistir())
 console.log(russo.disponivel())
-*/
+====================================
 
 function Pessoa(nome) {
 	this.nomePessoa = nome
@@ -115,3 +115,40 @@ const maria = new Pessoa("MARIA")
 console.log(maria.acordar())
 const joao = new Pessoa("JOAO")
 console.log(joao.dormir())
+====================================
+function Radio(nome) {
+	this.nomeRadio = nome
+	this.play = ()=>{
+		return this.nomeRadio + ": tocando agora"
+	}
+	this.song = ()=>{
+		return ": Inna - UP"
+	}
+	this.song1 = ()=>{
+		return ": abcdfu"
+	}
+}
+
+const europaplus = new Radio("EuropaPlus")
+console.log(europaplus.nomeRadio)
+console.log(europaplus.play())
+console.log(europaplus.song())
+console.log(europaplus.song1())
+*/
+
+function Pagamento(options) {
+	this.opcoes = options
+	this.visa = ()=>{
+		return ": visa"
+	}
+	this.master = ()=>{
+		return ": master"
+	}
+	this.cash = ()=>{
+		return ": dinheiro"
+	}
+}
+const pagamentoCard = new Pagamento("Pagamento cartao")
+const pagamentoCash = new Pagamento("Pagamento cash")
+console.log(pagamentoCard.visa())
+console.log(pagamentoCash.cash())
