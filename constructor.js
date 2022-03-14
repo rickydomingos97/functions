@@ -100,7 +100,10 @@ const russo = new Aula("Russo")
 console.log(russo.assistir())
 console.log(russo.disponivel())
 ====================================
+<<<<<<< HEAD
 
+=======
+>>>>>>> c648a897e4d854972e08960fc4b404257ca552e7
 function Pessoa(nome) {
 	this.nomePessoa = nome
 	this.acordar = ()=>{
@@ -115,6 +118,7 @@ const maria = new Pessoa("MARIA")
 console.log(maria.acordar())
 const joao = new Pessoa("JOAO")
 console.log(joao.dormir())
+<<<<<<< HEAD
 ====================================
 function Radio(nome) {
 	this.nomeRadio = nome
@@ -152,3 +156,19 @@ const pagamentoCard = new Pagamento("Pagamento cartao")
 const pagamentoCash = new Pagamento("Pagamento cash")
 console.log(pagamentoCard.visa())
 console.log(pagamentoCash.cash())
+=======
+*/
+
+function Russia(cidade) {
+	this.cidade = cidade
+	this.rua = ()=>{
+		return "Rua: petra metalnikova"
+	}
+}
+
+const cidade = new Russia("Krasnodar")
+const cidade2 = new Russia("Ural")
+
+console.log(cidade.cidade)
+console.log(cidade.rua())
+>>>>>>> c648a897e4d854972e08960fc4b404257ca552e7
