@@ -156,7 +156,6 @@ const pagamentoCard = new Pagamento("Pagamento cartao")
 const pagamentoCash = new Pagamento("Pagamento cash")
 console.log(pagamentoCard.visa())
 console.log(pagamentoCash.cash())
-=======
 */
 
 function Russia(cidade) {
@@ -171,4 +170,3 @@ const cidade2 = new Russia("Ural")
 
 console.log(cidade.cidade)
 console.log(cidade.rua())
->>>>>>> c648a897e4d854972e08960fc4b404257ca552e7
