@@ -1,18 +1,22 @@
 /**
  * Strings em numeros
- */
-
-let string = "123"
+ * 
+ * let string = "123"
 console.log(Number(string))
 let number = 432
 console.log(String(number))
+ */
 
-function Vendas(vendas) {
-    this.venda = vendas
-    this.pagamento = () => {
-        return this.venda + ": venda no cartao."
+
+
+
+
+function Dia(dia) {
+    this.day = dia
+    this.terminou = ()=>{
+        return this.day + ": esse dia terminou, ate mais!"
     }
-
 }
-const venda = new Vendas("VendasSorvete")
-console.log(venda.pagamento())
+
+const segunda = new Dia("Monday")
+console.log(segunda.terminou())
