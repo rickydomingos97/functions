@@ -1,4 +1,5 @@
-const number = 123;
-console.log(String(number))
-const string = '4321';
-console.log(Number(string))
+let word = "pessoas"
+console.log("a palavra " + word + " tem " + word.length + " letras")
+
+let num = 1234
+console.log(String(num).length);
