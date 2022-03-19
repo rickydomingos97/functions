@@ -7,7 +7,14 @@ console.log("a palavra " + word + " tem " + word.length + " letras")
 
 let num = 1234
 console.log(String(num).length);
-*/
 
 let number = 33.313131313
 console.log(number.toFixed(2).replace(".", ","))
+*/
+
+let word = "casa"
+console.log(word + " tem " + word.length + " letras!")
+let palavra = word
+console.log(palavra)
+palavra = "sabaka"
+console.log(palavra)
