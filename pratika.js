@@ -10,11 +10,24 @@ console.log(String(num).length);
 
 let number = 33.313131313
 console.log(number.toFixed(2).replace(".", ","))
-*/
-
+=====================================================
 let word = "casa"
 console.log(word + " tem " + word.length + " letras!")
 let palavra = word
 console.log(palavra)
 palavra = "sabaka"
 console.log(palavra)
+
+let number = 123.12423532432
+console.log(number.toFixed(2))
+
+let palavra = "banana"
+console.log(palavra.toUpperCase())
+let palavra2 = "BANANA"
+console.log(palavra2.toLowerCase())
+
+Separando strings
+Descrição
+Para separar um texto por espaços, pode-se usar o método split(" "), que transforma o texto em um array de strings baseado no argumento, que no caso são os espaços. Para juntar esse array é possível usar o método join('"), que juntaria essas palavras sem nenhum separador, porém colocando um argumento, no caso um underscore ( join("_") ) as palavras são juntadas com o argumento de separador.
+*/
+
