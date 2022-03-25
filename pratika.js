@@ -35,11 +35,21 @@ let myArray = phrase.split(" ")
 let phraseWithUnderscore = myArray.join("_")
 console.log(phraseWithUnderscore)
 
-*/
-let frase = "Essa é minha frase de codigo!"
-let meuArray = frase.split(" ")
-console.log(meuArray)
-console.log("===================")
 
-let minhaFraseComArray = meuArray.join("*")
-console.log(minhaFraseComArray)
+let frase = "Eu gosto de estudar codigos"
+let myArray = frase.split(" ")
+console.log(myArray);
+console.log("======================")
+let minhaFraseComSinais = myArray.join("$$$")
+console.log(minhaFraseComSinais)
+*/
+
+/* procurar a palavra "amor" dentro da frase:
+let frase = "Eu quero viver o amor"
+let maiusculas = frase.toUpperCase()
+console.log(maiusculas)
+console.log(maiusculas.includes("AMOR")) */
+
+let frase = "Eu tenho um sabaka"
+console.log("existe em frase a palavra sabaka?")
+console.log(frase.includes("sabaka"))
