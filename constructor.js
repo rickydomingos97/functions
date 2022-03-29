@@ -139,7 +139,7 @@ console.log(europaplus.play())
 console.log(europaplus.song())
 console.log(europaplus.song1())
 */
-
+/*
 function Pagamento(options) {
 	this.opcoes = options
 	this.visa = ()=>{
@@ -156,7 +156,7 @@ const pagamentoCard = new Pagamento("Pagamento cartao")
 const pagamentoCash = new Pagamento("Pagamento cash")
 console.log(pagamentoCard.visa())
 console.log(pagamentoCash.cash())
-*/
+
 
 function Russia(cidade) {
 	this.cidade = cidade
@@ -170,3 +170,42 @@ const cidade2 = new Russia("Ural")
 
 console.log(cidade.cidade)
 console.log(cidade.rua())
+*/
+/* transformar uma cadeia de caracteres em elementos de um array
+let word = "krasnodar"
+console.log(Array.from(word))
+console.log(Array.from(word).length)
+*/
+/**
+ * Existem várias maneiras de manipular arrays, como: o método push(), que adiciona um elemento no final do array, o método unshift(), que adiciona um elemento no começo do array, o método pop(), que retira um elemento do final do array, o método shift(), que retira um elemento do começo do array, o método slice(), que recebe como argumentos a posição de início e a posição do fim da parte que você quer selecionar, e retorna os valores destas posições, o método splice(), que recebe como argumentos a posição de início e a quantidade de elementos que você quer remover e o método indexOff(), que encontra o index do valor que recebe como argumento em um array.
+ */
+
+let techs = ["html", "css", "js", "java"]
+
+// adicionar um item ao fim
+techs.push("nodejs")
+// adicionar no começo
+techs.unshift("sql")
+// remover do fim
+//techs.pop()
+// remover do começo
+//techs.shift()
+// pegar somente alguns elementos do array
+console.log(techs)
+console.log(techs.slice(0, 1))
+// remover 1 ou mais itens em qualquer posição do array
+// encontrar a posiçao de um elemento no array
+
+/**
+ * let nomes = ['joao', 'maria', 'carla']
+nomes.push("sasha")
+nomes.unshift("Igor")
+//nomes.pop()
+//nomes.shift()
+console.log(nomes)
+// console.log(nomes.slice(0, 1))
+//console.log(nomes.splice(1, 2))
+let index = nomes.indexOf('maria')
+nomes.splice(index, 1)
+console.log(nomes)
+ */
