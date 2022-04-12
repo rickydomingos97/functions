@@ -181,7 +181,6 @@ console.log(Array.from(word).length)
  */
 
 let techs = ["html", "css", "js", "java"]
-
 // adicionar um item ao fim
 techs.push("nodejs")
 // adicionar no começo
@@ -192,12 +191,20 @@ techs.unshift("sql")
 //techs.shift()
 // pegar somente alguns elementos do array
 console.log(techs)
-console.log(techs.slice(0, 1))
-// remover 1 ou mais itens em qualquer posição do array
-// encontrar a posiçao de um elemento no array
+// o método slice(), que recebe como argumentos a posição de início e a posição do fim da parte que você quer selecionar, e retorna os valores destas posições,
+//console.log(techs.slice(3, 5))
 
-/**
- * let nomes = ['joao', 'maria', 'carla']
+// remover 1 ou mais itens em qualquer posição do array
+//console.log(techs.splice(2, 2))
+//console.log(techs)
+// encontrar a posiçao de um elemento no array
+let index = techs.indexOf('css')
+console.log(index)
+// agora quero remover o item que eu procurei a posicao. usando:
+techs.splice(index, 2) // o index do elemento buscado e a quantidade a ser removida a partir dele
+console.log(techs)
+/*
+let nomes = ['joao', 'maria', 'carla']
 nomes.push("sasha")
 nomes.unshift("Igor")
 //nomes.pop()
@@ -209,3 +216,14 @@ let index = nomes.indexOf('maria')
 nomes.splice(index, 1)
 console.log(nomes)
  */
+
+
+function Pedido(order) {
+    this.order = order
+    this.enviado = ()=>{
+        return "status: " + this.order + " => este pedido foi enviado com sucesso"
+    }
+}
+
+const pedido1 = new Pedido("Pedido1")
+console.log(pedido1.enviado())
