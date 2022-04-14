@@ -1,27 +1,13 @@
-//throw = throw new Error("Nome é necessario")
-function sayMyName(name = '') {
-    if (name === '') {
-        throw 'Nome eh obrigatorio'
+// try catch
+function notificacao(message = '') {
+    if(message === ''){
+        throw 'Sem novas mensagens'
     }
-    console.log('depois do erro')
-}
-// try... catch
-try {
-    sayMyName('ricky')
-} catch(e) {
-    console.log(e)
-}
-console.log('depois do try/ catch')
-
-function fecharVenda(venda) {
-    if(venda === '') {
-        throw 'Nenhum produto adicionado!'
-    }
-    console.log('Forma de pagamento')
+    console.log(message)
 }
 try {
-    fecharVenda('')
+    notificacao('')
 }catch(e) {
     console.log(e)
 }
-console.log('venda concluida')
+console.log('final da aplicacao')
