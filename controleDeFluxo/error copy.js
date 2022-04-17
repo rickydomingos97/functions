@@ -1,12 +1,11 @@
-function comprar(cesta = '') {
-    if(cesta === '') {
-        throw ' cesta vazia! escolha algo legal para voce!'
+function almoco(prato = '') {
+    if(prato === '') {
+        throw 'Prato vazio'
     }
-    console.log(cesta)
-}
-try {
-    comprar('tenis nike')
+    console.log(prato)
+}try {
+    almoco('Borshe')
 }catch(e) {
     console.log(e)
 }
-console.log('final da aplicacao')
+console.log('fim')
