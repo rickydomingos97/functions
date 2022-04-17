@@ -1,7 +1,7 @@
 // for ... of
 // vai criar um lop atraves de uma variavel previamente existente
-let nome = 'Ricardo'
+let nomes = ['joao', 'ana', 'maria']
 
-for(let char of nome) {
-    console.log(char)
+for(let nome of nomes) {
+    console.log(nome)
 }
