@@ -26,8 +26,9 @@ if(nota > 90) {
 }else {
     console.log('F')
 }
+console.log("O seu score foi de : " + nota)
 */
-let score = 88
+let score = -9
 let scoreA = score >= 90 && score <=100
 let scoreB = score >= 80 && score <= 89
 let scoreC = score >= 70 && score <= 79
@@ -46,8 +47,9 @@ if (scoreA) {
     scoreFinal = "D"
 } else if(scoreF) {
     scoreFinal = "F"
-}else if (scoreFinal) {
+}else {
     scoreFinal = "Nota invalida"
 }
 console.log('A sua nota foi: ' + score)
-console.log('O seu nivel foi: ' + scoreFinal)
+console.log(scoreFinal)
+
