@@ -8,13 +8,14 @@ for(let nome of nomes) {
 }
  */
 
-let entradas = [23, 1, 20, 2]
+let numbers = [1, 3, 2]
 
-function soma(array) {
+function soma(valores) {
     let total = 0
-
-    for(let valor of array) {
-        total +=valor
+    for(let valor of valores) {
+        total += valor
     }
     return total
 }
+
+console.log(soma())
